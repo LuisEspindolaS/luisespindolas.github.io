@@ -1,0 +1,68 @@
+/* Colores tomados de la foto de perfil. Cámbialos en :root */
+:root{--navy:#243749;--slate:#5b6b78;--steel:#747f86;--mist:#b3c3c8;--fog:#a8a5a1;--cloud:#e9ecec;--ink:#141d26;}
+body{background:var(--cloud);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.55;overflow-x:hidden}
+        .cs *{box-sizing:border-box;margin:0}
+        .cs a{color:inherit;text-decoration:none}
+        .cs .serif{font-weight:900;letter-spacing:-1px}
+        .cs .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+        .cs header{position:sticky;top:0;z-index:20;background:#243749cc;backdrop-filter:blur(10px);border-bottom:1px solid #fff1;color:#fff}
+        .cs .bar{display:flex;justify-content:space-between;align-items:center;height:64px}
+        .cs .logo{font-weight:900;font-size:22px;letter-spacing:-.5px}.cs .logo span{color:var(--mist)}
+        .cs nav{display:flex;gap:24px;align-items:center}
+        .cs nav a{opacity:.8;font-weight:500;transition:.2s}.cs nav a:hover{opacity:1;color:var(--mist)}
+        .cs .btn{display:inline-block;padding:12px 24px;border-radius:999px;background:var(--mist);color:var(--navy)!important;font-weight:700;border:0;cursor:pointer;font-size:15px;transition:transform .2s,box-shadow .2s}
+        .cs .btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px #24374955}
+        .cs .btn.dark{background:var(--navy);color:#fff!important}
+        .cs .btn.ghost{background:transparent;border:1px solid #fff6;color:#fff!important}
+        .cs .burger{display:none;background:none;border:0;color:#fff;font-size:26px;cursor:pointer}
+        .cs .hero{position:relative;height:min(86vh,720px);min-height:520px;background:linear-gradient(180deg,#7f8488 0%,#a8a5a1 55%,#b3c3c8 100%);color:#fff;overflow:hidden;display:flex;align-items:center}
+        .cs .layer{position:absolute;left:0;width:200%;pointer-events:none}
+        .cs .cloud{height:90px;border-radius:999px;background:#a8a5a1;opacity:.75;position:absolute;animation:drift linear infinite}
+        @keyframes drift{from{transform:translateX(-30vw)}to{transform:translateX(130vw)}}
+        .cs .mtn{position:absolute;bottom:0;left:0;width:100%;height:58%}
+        .cs .hero h1{font-size:clamp(44px,8vw,88px);line-height:1;letter-spacing:-2px;max-width:680px;text-shadow:0 2px 30px #14202c66}
+        .cs .hero p{margin:18px 0 28px;font-size:19px;max-width:460px;color:#fff;text-shadow:0 1px 16px #14202c99}
+        .cs .row{display:flex;gap:12px;flex-wrap:wrap}
+        .cs section{padding:84px 0}
+        .cs h2{font-size:clamp(28px,5vw,44px);line-height:1.1;letter-spacing:-1px;margin-bottom:8px;color:var(--navy)}
+        .cs .sub{color:var(--slate);margin-bottom:30px}
+        .cs .card{background:#fff;border-radius:22px;border:1px solid #24374914;box-shadow:0 10px 30px #2437491a;overflow:hidden}
+        .cs .feed{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+        .cs .post{transition:transform .35s}.cs .post:hover{transform:translateY(-6px)}
+        .cs .img{aspect-ratio:4/3;background:linear-gradient(135deg,var(--mist),var(--fog));display:flex;align-items:center;justify-content:center;color:var(--slate)}
+        .cs .pb{padding:20px}
+        .cs .meta{display:flex;gap:10px;align-items:center;margin-bottom:10px}
+        .cs .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center}
+        .cs .meta small{display:block;color:var(--slate)}
+        .cs .acts{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+        .cs .chip{padding:8px 16px;border-radius:999px;border:1px solid #24374933;background:#fff;color:var(--navy);cursor:pointer;font-size:14px;transition:.2s}
+        .cs .chip:hover,.cs .chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+        .cs .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+        .cs .dark-sec{background:var(--navy);color:#fff}
+        .cs .dark-sec h2{color:#fff}.cs .dark-sec .sub{color:var(--mist)}
+        .cs .apps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+        .cs .app{padding:26px;position:relative;transition:transform .3s,box-shadow .3s;color:var(--ink)}
+        .cs .app:hover{transform:translateY(-8px);box-shadow:0 18px 40px #00000040}
+        .cs .app .ic{font-size:36px;display:inline-block;transition:transform .35s}
+        .cs .app:hover .ic{transform:scale(1.2) rotate(-8deg)}
+        .cs .app .tag{position:absolute;top:16px;right:16px;font-size:12px;background:var(--cloud);color:var(--slate);padding:3px 10px;border-radius:99px}
+        .cs .app h3{margin:8px 0 4px;color:var(--navy)}.cs .app p{color:var(--slate);font-size:15px}
+        .cs .soon{font-size:12px;color:var(--steel);margin-top:10px;display:block}
+        .cs .demo{padding:28px;margin-top:22px;color:var(--ink)}
+        .cs .demo h3{color:var(--navy);margin-bottom:14px}
+        .cs .stops{list-style:none;padding:0;margin:18px 0 0;position:relative}
+        .cs .stops li{padding:8px 0 8px 28px;position:relative}
+        .cs .stops li:before{content:"";position:absolute;left:6px;top:50%;width:10px;height:10px;border-radius:50%;background:var(--navy);transform:translateY(-50%)}
+        .cs .stops li:not(:last-child):after{content:"";position:absolute;left:10px;top:60%;width:2px;height:100%;background:var(--mist)}
+        .cs .map{position:relative;aspect-ratio:16/9;border-radius:16px;background:linear-gradient(135deg,var(--mist),#d5dde0);overflow:hidden;background-image:linear-gradient(#24374912 1px,transparent 1px),linear-gradient(90deg,#24374912 1px,transparent 1px);background-size:40px 40px}
+        .cs .pin{position:absolute;width:22px;height:22px;border-radius:50% 50% 50% 0;background:#b4423a;transform:rotate(-45deg);border:0;cursor:pointer;transition:transform .2s}
+        .cs .pin:hover{transform:rotate(-45deg) scale(1.3)}
+        .cs .big{font-size:clamp(22px,4vw,30px);color:var(--navy);min-height:44px;margin:12px 0}
+        .cs .cta{text-align:center;background:linear-gradient(135deg,var(--mist),var(--fog));padding:56px 20px}
+        .cs footer{padding:30px 0;text-align:center;color:var(--slate);font-size:14px}
+        @media(max-width:800px){
+          .cs nav{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--navy);padding:20px;gap:16px}
+          .cs nav.open{display:flex}.cs .burger{display:block}
+          .cs .feed,.cs .apps{grid-template-columns:1fr}.cs section{padding:60px 0}
+        }
+        @media(prefers-reduced-motion:reduce){.cs *{animation:none!important;transition:none!important}}
